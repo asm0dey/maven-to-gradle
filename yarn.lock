@@ -455,6 +455,13 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-json/skill-icons@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@iconify-json/skill-icons/-/skill-icons-1.1.2.tgz#ed33e7e3ebaa28198d88662a1aa9c638a4cc3bf8"
+  integrity sha512-USuBvlGoOryx7EPCNGqJ2PohbNHRJ4wTl7druaarQglhiYYOw8B6UoDZhWWu6+xIy4vieRpmyYO7HVd6dI30Dg==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/vscode-icons@^1.1.25":
   version "1.1.25"
   resolved "https://registry.yarnpkg.com/@iconify-json/vscode-icons/-/vscode-icons-1.1.25.tgz#27d7a095d5664dd896cb1edc2ceee7a55f71bf62"

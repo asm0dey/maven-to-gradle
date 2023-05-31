@@ -155,11 +155,12 @@ Rich version declaration ↓
 
 # Maven Lifecycle
 
-<Transform scale="0.6">
+<Transform scale="0.59">
 
 ![](https://i.stack.imgur.com/DU5hL.png)
 
 </Transform>
+
 
 ---
 
@@ -203,3 +204,228 @@ project("project-a") {
 [![](http://api.qrserver.com/v1/create-qr-code/?color=FFFFFF&bgcolor=000000&data=https%3A%2F%2Fdocs.gradle.org%2Fcurrent%2Fuserguide%2Fmore_about_tasks.html%23sec%3Aordering_tasks&qzone=1&margin=0&size=400x400&ecc=L)](https://docs.gradle.org/current/userguide/more_about_tasks.html#sec:ordering_tasks)
 
 </div>
+
+---
+
+# Slow build of the monorepo
+
+## Incremental builds to the rescue!
+
+<div v-click>
+
+![](/incremental.png)
+
+</div>
+<div v-click>
+
+![](/javanet.png)
+
+</div>
+
+
+---
+layout: statement
+---
+
+# Not the case with Gradle!
+
+---
+
+# Gradle speeds things up
+
+<v-clicks>
+
+1. Gradle daemon
+1. Gradle incremental build (`org.gradle.caching=true`)
+1. Multithreading OOTB
+1. Configuration caching (`org.gradle.configuration-cache=true`)
+1. Lazy task configuration
+1. Gradle enterprise helps with anomaly detection and understanding
+
+</v-clicks>
+
+---
+
+# Maven inter-module dependencies
+
+## What if you have a library?
+
+I know, any big organization has their own libraries and this is cool!
+
+But what happens when you library depends on, say, HTTP client?
+
+It will be available to all the clients of the library!
+
+---
+layout: statement
+---
+
+# Not the case with Gradle!
+
+---
+
+# Api dependencies in Gradle
+
+## Module is just another flavor of library
+
+- `api` dependencies will be visible to those who depend on a library
+- `implementation` dependencies won't be
+
+Just change preferred HTTP client without breaking others!
+
+```kotlin
+api(project(":core"))
+```
+
+This ↑ is how dependency on other module looks
+
+---
+
+# Profiles
+
+## I had a `profile` hell!
+
+For Tomcat I had a crazy profiles to download the correct `tcnative` library.
+
+```xml
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-antrun-plugin</artifactId>
+<executions>
+  <execution>
+    <phase>initialize</phase>
+    <configuration>
+      <exportAntProperties>true</exportAntProperties>
+      <target>
+        <condition property="tcnative.classifier" value="${os.detected.classifier}-fedora" else="${os.detected.classifier}">
+          <isset property="os.detected.release.fedora"/>
+        </condition>
+      </target>
+    </configuration>
+    <goals>
+      <goal>run</goal>
+    </goals>
+  </execution>
+</executions>
+```
+
+---
+layout: statement
+---
+
+# Not the case with Gradle!
+
+---
+layout: center
+---
+
+# Just use `if`s
+
+## You have all the JVM's power at your disposal
+
+
+---
+layout: statement
+---
+
+# Migration
+
+---
+
+# Migration
+
+## Basic scenario
+
+```bash
+gradle init
+```
+
+<div v-click>
+
+- Will generate basic `build.gradle`
+- With scopes defined as accurate as possible
+
+</div>
+
+---
+
+# Migration
+
+## Better scenario
+
+1. Create a Build Scan for Maven with Gradle Enterprise
+2. Learn how to compare artifacts
+3. `gradle init`
+4. Create a Build Scan for Gradle
+5. Compare results until match
+
+---
+layout: center
+---
+
+# But what about our plugins?
+
+---
+layout: two-cols
+---
+
+# Plugin migration
+<br>
+Bad news:
+
+> One does not simply reuse Maven plugins in Gradle
+
+<p class="text-right"><i>Ben Franklin</i></p>
+
+<div v-click="2">
+
+Good news:
+
+1. Plugin ecosystem is **mammoth** <vscode-icons-file-type-gradle/>.<br/>
+   Probably somebody already did what you need
+2. Writing plugins for Gradle is order of magnitude easier
+3. We have awesome docs
+4. We can help you!
+
+</div>
+
+::right::
+
+<br/>
+<br/>
+<br/>
+<br/>
+<div v-click="1">
+
+![](/onecant.jpg)
+
+</div>
+
+---
+layout: center
+---
+
+# Summary
+
+## What might gradle do for you?
+
+1. Make your builds faster
+2. Resolve conflicts better
+3. Write in a _normal_ ™ programming language
+4. Give you more flexibility
+
+---
+layout: center
+---
+
+# Do you have issues with Maven?
+
+# Hopefully it's not the case with Gradle!
+
+---
+layout: center
+---
+
+# Thank you!
+
+## It's time for your questions!
+
