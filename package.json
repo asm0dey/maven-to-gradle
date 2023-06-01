@@ -3,7 +3,8 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "pdf": "slidev export -c --format pdf --output dist/index.pdf"
   },
   "dependencies": {
     "@slidev/cli": "^0.42.1",

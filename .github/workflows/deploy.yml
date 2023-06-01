@@ -25,10 +25,14 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: install
-      - name: Install
+      - name: Build HTML
         uses: borales/actions-yarn@v4
         with:
           cmd: build --base maven-to-gradle
+      - name: Build PDF
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: pdf
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
