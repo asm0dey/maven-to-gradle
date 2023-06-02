@@ -60,7 +60,7 @@ And your concerns.
 
 ---
 layout: cover
-background: /pain.png
+background: pain.png
 ---
 
 <div class='text-center'>
