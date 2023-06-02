@@ -372,11 +372,15 @@ layout: two-cols
 
 # Plugin migration
 <br>
+<div v-click="1">
+
 Bad news:
 
 > One does not simply reuse Maven plugins in Gradle
 
 <p class="text-right"><i>Ben Franklin</i></p>
+
+</div>
 
 <div v-click="2">
 
@@ -396,11 +400,9 @@ Good news:
 <br/>
 <br/>
 <br/>
-<div v-click="1">
 
 ![](/onecant.jpg)
 
-</div>
 
 ---
 layout: center
