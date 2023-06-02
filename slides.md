@@ -50,7 +50,7 @@ And your concerns.
 
 ---
 
-# Here is what I know about you:
+# Here is what I know about your company:
 
 - You already use Gradle for your Android projects
 - You have one Java monorepo
@@ -65,7 +65,9 @@ background: /pain.png
 
 <div class='text-center'>
 
-# Let's highlight your current pains
+# Let's talk about pain
+
+## Pain of Maven
 
 </div>
 
