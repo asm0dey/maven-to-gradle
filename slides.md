@@ -21,7 +21,7 @@ colorSchema: 'dark'
 background: black
 ---
 
-# OK, we're on Gradle.
+# OK, we're switching Gradle.
 # What's next?
 
 Pasha Finkelshteyn
