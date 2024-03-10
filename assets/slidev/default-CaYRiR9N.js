@@ -1,0 +1,1 @@
+import{o,b as t,f as r}from"../modules/vue-C0bilhvh.js";import{b as s}from"../index-DrzGfO3q.js";const a={},n={class:"slidev-layout default"};function l(e,c){return o(),t("div",n,[r(e.$slots,"default")])}const f=s(a,[["render",l],["__file","/home/runner/work/maven-to-gradle/maven-to-gradle/node_modules/@slidev/client/layouts/default.vue"]]);export{f as I};
