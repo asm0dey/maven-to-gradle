@@ -442,9 +442,9 @@
     "@iconify/types" "*"
 
 "@iconify-json/mdi@^1.1.52":
-  version "1.1.52"
-  resolved "https://registry.yarnpkg.com/@iconify-json/mdi/-/mdi-1.1.52.tgz#3579f34632313ac73f5dd21c06aba042747c1e86"
-  integrity sha512-tLzpFcmoGw1/jHcl+BshUd4bqvP4755OUluaARsuKskTp2aIPIAkRQOhzJGpry9CZ0i82z0alq4HrKrp9uvj4A==
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@iconify-json/mdi/-/mdi-1.2.3.tgz#5e4ee9d8c8aaad04381c8cc6c6edbe3327f031b5"
+  integrity sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==
   dependencies:
     "@iconify/types" "*"
 
