@@ -456,9 +456,9 @@
     "@iconify/types" "*"
 
 "@iconify-json/skill-icons@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@iconify-json/skill-icons/-/skill-icons-1.1.2.tgz#ed33e7e3ebaa28198d88662a1aa9c638a4cc3bf8"
-  integrity sha512-USuBvlGoOryx7EPCNGqJ2PohbNHRJ4wTl7druaarQglhiYYOw8B6UoDZhWWu6+xIy4vieRpmyYO7HVd6dI30Dg==
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@iconify-json/skill-icons/-/skill-icons-1.2.4.tgz#4fcf66fbe0b9140a48bc93458ca48c86e425375f"
+  integrity sha512-S6iRKHGlGCb/zfx3Isv1TBe5PunbDE5FEwJcaXji60+yRZMrcFFtYEI1xivKqaGKXyVZ508yjGDItsehQdJmSg==
   dependencies:
     "@iconify/types" "*"
 
