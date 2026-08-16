@@ -435,9 +435,9 @@
     "@iconify/types" "*"
 
 "@iconify-json/logos@^1.1.31":
-  version "1.1.31"
-  resolved "https://registry.yarnpkg.com/@iconify-json/logos/-/logos-1.1.31.tgz#5669bb982d3152701b7910c571a59670b94ea0ad"
-  integrity sha512-15u8OWZREIS02+ZRS6sXJ6AfhsK2+p5dw2XvMsMd0UJKGNvRmL1STPdHXtOhOe7lQ/YsmcvtpZXDJfcdBmcoPQ==
+  version "1.2.13"
+  resolved "https://registry.yarnpkg.com/@iconify-json/logos/-/logos-1.2.13.tgz#19b4b346d771a97426cacd0c6bbff47d1fceb4ba"
+  integrity sha512-Up54ZnIuiuBgGAsuzhR1nvKqwq8VE6YM3XLwVB6IgY+7NAasz6WKu9Ay5hGfAkfuOKowodfwDC8ozReEBYrWRg==
   dependencies:
     "@iconify/types" "*"
 
