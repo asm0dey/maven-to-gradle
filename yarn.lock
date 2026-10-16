@@ -463,9 +463,9 @@
     "@iconify/types" "*"
 
 "@iconify-json/vscode-icons@^1.1.25":
-  version "1.1.25"
-  resolved "https://registry.yarnpkg.com/@iconify-json/vscode-icons/-/vscode-icons-1.1.25.tgz#27d7a095d5664dd896cb1edc2ceee7a55f71bf62"
-  integrity sha512-TA4NuBffMLHlAAZ2URBtPy39+SuO35ThjUvaaUrd8+/KYijIUAU5prHW8j+EGVtajFZl+DT1TxAVdOXpijuFSg==
+  version "1.2.90"
+  resolved "https://registry.yarnpkg.com/@iconify-json/vscode-icons/-/vscode-icons-1.2.90.tgz#b005104fe5117a482b9ccc1908bedda795effb37"
+  integrity sha512-4nhCCePjGb2V2oghUkOiE2Vqaa4o+mCrVN4hmbKO3UtJdISo4ESvmMAY7rScaCBOcaZ7QPmQ2lEIOi69t8p6VQ==
   dependencies:
     "@iconify/types" "*"
 
